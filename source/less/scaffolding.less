@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("../fonts/roboto-medium.woff2") format("woff2"),
+    url("../fonts/roboto-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: local("RobotoCondensed"),
+    url("../fonts/robotocondensed.woff2") format("woff2"),
+    url("../fonts/robotocondensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: local("RobotoCondensedBold"),
+    url("../fonts/robotocondensed-bold.woff2") format("woff2"),
+    url("../fonts/robotocondensed-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Mono";
+  src: local("PTMono"),
+    url("../fonts/ptmono.woff2") format("woff2"),
+    url("../fonts/ptmono.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  color: #666666;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  background: url("../img/triangle1.png") left 21.7% bottom 235px no-repeat;
+  background-color: #ffffff;
+}
+
+.visually-hidden:not(:active):not(:focus),
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+@media (min-width: 501px) {
+  body {
+    background: url("../img/triangle1.png") left 211px bottom 101px no-repeat;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background: url("../img/triangle1.png") left 559px bottom 185px no-repeat, url("../img/triangle2.png") left 1556px bottom 485px no-repeat, url("../img/triangle3.png") left 202px bottom 836px no-repeat, url("../img/triangle4.png") left 0 bottom 0 no-repeat;
+  }
+}
