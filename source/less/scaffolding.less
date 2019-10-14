@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Regular"),
-    url("../fonts/montserrat_bold.woff2") format("woff2"),
-    url("../fonts/montserrat_bold.woff") format("woff");
+    url("../fonts/montserrat_regular.woff2") format("woff2"),
+    url("../fonts/montserrat_regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -34,21 +34,9 @@
   font-style: normal;
 }
 
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  min-width: 320px;
-  color: #666666;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  background: url("../img/triangle1.png") left 21.7% bottom 235px no-repeat;
-  background-color: #ffffff;
-}
-
 .visually-hidden:not(:active):not(:focus),
-input[type="checkbox"].visually-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -60,14 +48,16 @@ input[type="checkbox"].visually-hidden {
   overflow: hidden;
 }
 
-@media (min-width: 501px) {
-  body {
-    background: url("../img/triangle1.png") left 211px bottom 101px no-repeat;
-  }
-}
-
-@media (min-width: 800px) {
-  body {
-    background: url("../img/triangle1.png") left 559px bottom 185px no-repeat, url("../img/triangle2.png") left 1556px bottom 485px no-repeat, url("../img/triangle3.png") left 202px bottom 836px no-repeat, url("../img/triangle4.png") left 0 bottom 0 no-repeat;
-  }
+body {
+  position: relative;
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 0;
+  color: #30353e;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #ffffff;
 }

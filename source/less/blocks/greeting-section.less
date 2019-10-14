@@ -1,0 +1,125 @@
+.main__greeting {
+  position: relative;
+  padding-top: 36px;
+  min-height: 581px;
+  z-index: -1;
+}
+
+.main__greeting-title {
+  margin: 0;
+  margin-bottom: 3px;
+  font-family: "Montserrat SemiBold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  color: #2c78f6;
+}
+
+.main__greeting-instruction {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #909aab;
+
+  &--desktop {
+    display: none;
+  }
+
+  &--mobile {
+    display: inline;
+  }
+}
+
+.main__greeting-image {
+  display: block;
+  width: 375px;
+  height: 364px;
+  //text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+}
+
+@media (min-width: 1024px) {
+  .main__greeting {
+    display: block;
+    width: 26.3%;
+    padding-top: 44px;
+    padding-bottom: 5px;
+    min-height: 100%;
+  }
+
+  .main__form-section {
+    width: 73.7%;
+  }
+
+  .main__greeting-title {
+    margin-bottom: 19px;
+  }
+
+  .main__greeting-instruction {
+    padding: 0 55px;
+    margin-bottom: 65px;
+    font-family: "Montserrat Medium", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline;
+    }
+  }
+
+  .main__greeting-image {
+    display: block;
+    width: 462px;
+    height: auto;
+    margin-left: auto;
+    margin-bottom: 6px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1800px) {
+  .main__greeting {
+    width: 33.9%;
+    padding-top: 101px;
+    padding-bottom: 4px;
+  }
+
+  .main__form-section {
+    width: 66.1%;
+  }
+
+  .main__greeting-title {
+    margin-bottom: 23px;
+    padding-right: 55px;
+    font-size: 40px;
+  }
+
+  .main__greeting-instruction {
+    padding: 0 95px;
+    padding-right: 130px;
+    margin-bottom: 86px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .main__greeting-image {
+    width: 772px;
+    margin-bottom: 1px;
+  }
+}

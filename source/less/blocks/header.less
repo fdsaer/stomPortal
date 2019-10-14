@@ -1,0 +1,207 @@
+.header {
+  position: relative;
+  display: flex;
+  padding: 12px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
+}
+
+.header__logo {
+  width: 116px;
+  margin-left: 3px;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.header__logo-first-line {
+  margin: 0;
+  color: #30353e;
+  font-family: "Montserrat Bold", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.header__logo-first-line span:last-child {
+  color: #2c78f6;
+}
+
+.header__logo-second-line {
+  margin: 0;
+  color: #909aab;
+  font-family: "Montserrat SemiBold", "Arial", sans-serif;
+  font-size: 9px;
+  line-height: 9px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header__searching-form {
+  display: none;
+}
+
+.header__searching-toggle {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-top: 1px;
+  margin-right: 19px;
+  border: none;
+  background: url("../img/search-icon.png") center center no-repeat;
+  background-size: 23px 24px;
+}
+
+.header__user-menu-button {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../img/login-icon.png") center center no-repeat;
+  background-size: 24px 24px;
+}
+
+.header__user-menu-button span {
+  display: none;
+}
+
+.header__user-menu {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+.header__user-menu-link {
+  display: block;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 57px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
+  }
+
+  .header__logo {
+    width: 120px;
+    margin-left: 3px;
+    margin-top: 4px;
+    letter-spacing: 0.4px;
+    text-transform: lowercase;
+    text-decoration: none;
+  }
+
+  .header__logo-second-line {
+    margin-left: 1px;
+    letter-spacing: 0.15px;
+  }
+
+  .header__searching-form {
+    display: block;
+    margin-left: auto;
+    margin-right: 225px;
+  }
+
+  .header__searching-field {
+    display: block;
+    box-sizing: border-box;
+    width: 513px;
+    height: 38px;
+    padding-left: 38px;
+    border: 1px solid #eaecef;
+    border-radius: 5px;
+    font-family: "Montserrat Medium", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    color: #30353e;
+    background: url("../img/search-icon-2.png") 10px 9px no-repeat;
+  }
+
+  .header__searching-toggle {
+    display: none;
+  }
+
+  .header__user-menu-button {
+    margin-left: auto;
+    margin-top: 2px;
+    margin-right: 3px;
+    width: 33px;
+    height: 33px;
+    background: url("../img/login-icon-desktop.png") center center no-repeat;
+    background-size: 33px 33px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .header {
+    padding: 93px;
+    padding-top: 19px;
+    padding-bottom: 24px;
+  }
+
+  .header__logo {
+    width: 180px;
+  }
+
+  .header__logo-first-line {
+    font-size: 27px;
+    line-height: 27px;
+    letter-spacing: 0;
+  }
+
+  .header__logo-second-line {
+    margin-top: -1px;
+    font-family: "Montserrat Medium", "Arial", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.4px;
+  }
+
+  .header__searching-form {
+    margin-left: auto;
+    margin-right: 225px;
+  }
+
+  .header__searching-field {
+    width: 806px;
+    height: 45px;
+    margin-top: 4px;
+    padding-left: 49px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 15px;
+    background-size: 22px 22px;
+    background-position: 14px 10px;
+  }
+
+  .header__user-menu-button {
+    width: 130px;
+    height: 35px;
+    box-sizing: border-box;
+    margin-top: 9px;
+    margin-left: 245px;
+    padding-left: 53px;
+    background-position: 9px 1px;
+    text-decoration: none;
+  }
+
+  .header__user-menu-button span {
+    display: block;
+    margin-top: 5px;
+    font-family: "Montserrat Medium", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    color: #2c78f6;
+    border: none;
+  }
+}
